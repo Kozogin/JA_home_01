@@ -1,4 +1,4 @@
-package ua.lviv.lgs;
+package ua.lviv.lgs; 
 
 import static org.junit.Assert.assertFalse;
 

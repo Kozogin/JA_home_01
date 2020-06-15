@@ -1,4 +1,4 @@
-package ua.lviv.lgs;
+package ua.lviv.lgs; 
 
 import org.junit.After;
 import org.junit.Assert;

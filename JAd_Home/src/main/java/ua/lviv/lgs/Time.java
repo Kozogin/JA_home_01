@@ -1,4 +1,4 @@
-package ua.lviv.lgs; 
+package ua.lviv.lgs;   
 
 import java.io.Serializable;
 import java.util.Comparator;

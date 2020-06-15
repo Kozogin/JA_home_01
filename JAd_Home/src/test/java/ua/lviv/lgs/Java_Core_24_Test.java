@@ -1,4 +1,4 @@
-package ua.lviv.lgs; 
+package ua.lviv.lgs;  
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite.SuiteClasses;
