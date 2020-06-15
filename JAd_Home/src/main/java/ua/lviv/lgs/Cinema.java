@@ -73,12 +73,17 @@ public class Cinema implements Serializable {
 
 	public void addMovie() throws WrongInputTimeException, WrongInputLengthTitleException {
 		
-		System.out.println("Enter the name of the movie: ");
-		String titleMovie = scanLine.get();
-		System.out.println("Enter duration of movie, hour: ");
-		int hour = scanInt.get();
-		System.out.println("Enter duration of movie, min: ");
-		int min = scanInt.get();		
+//		System.out.println("Enter the name of the movie: ");
+//		String titleMovie = scanLine.get();
+//		System.out.println("Enter duration of movie, hour: ");
+//		int hour = scanInt.get();
+//		System.out.println("Enter duration of movie, min: ");
+//		int min = scanInt.get();	
+		
+		String titleMovie = "Everest";		/////////////////////
+		int hour = 1;				///////////////////////////
+		int min = 52;				////////////////////////////
+		
 		if(moviesLibrary == null) {
 			moviesLibrary = new ArrayList<>();
 		}
@@ -117,13 +122,13 @@ public class Cinema implements Serializable {
 				return true;
 			}
 		}
-		System.out.println("Wrong input the day of week");
+////////////System.out.println("Wrong input the day of week");
 		return false;
 	}
 
 	public void removeMovie(Schedule schedule) {
 		if(moviesLibrary.size() != 0) {
-			showMovie();			
+/////////////showMovie();			
 			Movie deleteMovie = remoteListMovies();
 			remoteSchedulesMovie(deleteMovie);
 			remoteSeancesMovie(schedule, deleteMovie);
@@ -187,8 +192,9 @@ public class Cinema implements Serializable {
 
 		/* remove from List<Movie> moviesLibrary */
 		try {
-			System.out.println("Remove movie Enter number film to remove: ");
-			int idRemove = scanInt.get();
+///////////////System.out.println("Remove movie Enter number film to remove: ");
+			//int idRemove = scanInt.get();
+			int idRemove = 1;
 
 			Movie deleteMovie = moviesLibrary.get(idRemove - 1);
 			moviesLibrary.remove(idRemove - 1);

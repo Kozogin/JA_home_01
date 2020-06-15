@@ -29,8 +29,8 @@ public class Schedule implements Serializable{
 	public void addSeance(Cinema cinema, Movie movie, Seance seance) throws WrongInputTimeException {
 		
 		if(cinema.moviesLibrary.size() != 0) {
-			cinema.showMovie();
-			System.out.println("Enter id movie for seance: ");
+///////////////////////cinema.showMovie();
+////////////System.out.println("Enter id movie for seance: ");
 			
 ////////////int idMovie = cinema.scanInt.get();
 			int idMovie = 1;////////////////////////////////
@@ -42,7 +42,7 @@ public class Schedule implements Serializable{
 					Seance seanceLast = new Seance();
 					int hour = 0;
 					do {
-						System.out.println("Enter correct start seance hour: ");
+////////////	System.out.println("Enter correct start seance hour: ");
 						
 ////////////////////////hour = cinema.scanInt.get();
 						hour = 10;//////////////////////////////////////////////
@@ -57,7 +57,7 @@ public class Schedule implements Serializable{
 					
 					int min = 0;	
 					do {
-						System.out.println("Enter correct start seance min: " );
+///////////////////////						System.out.println("Enter correct start seance min: " );
 						
 ////////////////////////min = cinema.scanInt.get();
 						min = 30;///////////////////////////////////////////////
@@ -91,9 +91,12 @@ public class Schedule implements Serializable{
 
 	public void remoteSeance(Cinema cinema) {
 		if (seanses.size() != 0) {
-			showSeance();
-			System.out.println("Remove, Enter id seance to remove:");
-			int idSeance = cinema.scanInt.get();
+///////////////////////showSeance();
+///////////////////////System.out.println("Remove, Enter id seance to remove:");
+////////////int idSeance = cinema.scanInt.get();
+			
+			int idSeance = 1;
+			
 			if (seanses.size() >= idSeance) {
 				int id = 0;
 				Iterator<Seance> iterator = seanses.iterator();
@@ -117,7 +120,7 @@ public class Schedule implements Serializable{
 		boolean flag = cinema.isMonthPresent(arrDays, dayOfWeek);
 		if (flag) {
 			Days day = Days.valueOf(dayOfWeek.toUpperCase());
-		seanses = cinema.schedules.get(day).getSeances();
+		seanses = cinema.schedules.get(day).getSeances();		
 		}		
 	}
 	
